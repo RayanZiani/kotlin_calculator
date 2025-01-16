@@ -11,6 +11,7 @@ An Android calculator developed in Kotlin.
 - [Setup](#setup)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Build](#build)
 
 ## Overview
 
@@ -79,6 +80,43 @@ exp4j = "0.4.8"
 - Material Design Components - UI elements
 - ConstraintLayout - Flexible layouts
 - exp4j - Mathematical expression evaluation
+
+## Build
+
+### Debug APK
+
+1. Using Android Studio:
+    - Go to `Build` > `Build Bundle(s) / APK(s)` > `Build APK(s)`
+    - Click on `locate` in the popup to find the generated APK
+
+2. Using Terminal:
+```bash
+./gradlew assembleDebug
+```
+
+The debug APK will be generated at:
+```
+app/build/outputs/apk/debug/app-debug.apk
+```
+
+### Release APK
+
+1. Using Android Studio:
+    - Go to `Build` > `Generate Signed Bundle / APK`
+    - Choose `APK`
+    - Fill in the keystore information or create a new keystore
+    - Select release build variant
+    - Click `Finish`
+
+2. Using Terminal (requires signing configuration in build.gradle.kts):
+```bash
+./gradlew assembleRelease
+```
+
+The release APK will be generated at:
+```
+app/build/outputs/apk/release/app-release.apk
+```
 
 ## Project Structure
 
