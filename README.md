@@ -12,6 +12,7 @@ An Android calculator developed in Kotlin.
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Build](#build)
+- [Releases](#releases)
 
 ## Overview
 
@@ -116,6 +117,8 @@ app/build/outputs/apk/debug/app-debug.apk
 The release APK will be generated at:
 ```
 app/build/outputs/apk/release/app-release.apk
+OR
+app/release/app-release.apk
 ```
 
 ## Project Structure
@@ -138,3 +141,17 @@ app/
 │   └── libs.versions.toml
 └── settings.gradle.kts
 ```
+
+## Releases
+
+The latest version of the calculator is always available in the [Releases](https://github.com/your-username/calculator/releases) section. Each time the source code is updated, a new release is published with the corresponding APK.
+
+To get the latest version:
+1. Visit the [Releases](https://github.com/your-username/calculator/releases) page
+2. Download the most recent APK file
+3. Install it on your Android device
+
+Each release includes:
+- Updated source code
+- Pre-built APK file
+- Changelog describing the updates
